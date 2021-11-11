@@ -42,7 +42,8 @@ function my_keydown(e)
 {
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
-	if((ball_x==hole_x)&&(ball_y==hole_y)){
+	//Add Condition (ball_x==hole_x)&&(ball_y==hole_y)
+	if(){
 		canvas.remove(ball_obj);
 		console.log("You have Hit the Goal!!!");
 		document.getElementById("hd3").innerHTML="You have Hit the Goal!!!";
@@ -87,7 +88,8 @@ function my_keydown(e)
 	{
 		if(ball_y <=450)
 		{
-			ball_y = ball_y + block_image_height;
+			//ball_y = ball_y + block_image_height;
+			
 			console.log("block image height = " + block_image_height);
 			console.log("When Down arrow key is pressed, X =  " + ball_x + " , Y = "+ball_y);
 			canvas.remove(ball_obj);
@@ -99,7 +101,7 @@ function my_keydown(e)
 	{
 		if(ball_x >5)
 		{
-			ball_x = ball_x - block_image_width;
+			//ball_x = ball_x - block_image_width;
 			console.log("block image width = " + block_image_width);
 			console.log("When Left arrow key is pressed, X =  " + ball_x + " , Y = "+ball_y);
 			canvas.remove(ball_obj);
@@ -111,7 +113,7 @@ function my_keydown(e)
 	{
 		if(ball_x <=1050)
 		{
-			ball_x = ball_x + block_image_width;
+			//ball_x = ball_x + block_image_width;
 			console.log("block image width = " + block_image_width);
 			console.log("When Right arrow key is pressed, X =  " + ball_x + " , Y = "+ball_y);
 			canvas.remove(ball_obj);
